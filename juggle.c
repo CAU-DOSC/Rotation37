@@ -45,7 +45,7 @@ void juggle(char *str1, int length, int d)
 	}
 
 	else
-	{`
+	{
 		d = -d;
 		for (i = 0; i <gcd_num; i++)
 		{
