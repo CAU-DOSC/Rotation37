@@ -9,24 +9,24 @@ void BlockSwap(char *str, int n, int d)
 	
 	if (d > 0)//Clockwise Rotation
 	{
-		for (int i = 0;i < data;i++)//strÀÇ ¾ÕºÎºÐ data¸¸Å­À» TempStr¿¡ ÀúÀå
+		for (int i = 0; i < data; i++)//strì˜ ì•žë¶€ë¶„ dataë§Œí¼ì„ TempStrì— ì €ìž¥
 			TempStr[i] = str[i];
 
-		for (int i = 0;i < n - data;i++)//strÀÇ ¾ÕºÎºÐ data¸¸Å­À» Á¦¿ÜÇÑ µÞºÎºÐÀ» ¾ÕÂÊÀ¸·Î ´ç°Ü¿È
+		for (int i = 0; i < n - data; i++)//strì˜ ì•žë¶€ë¶„ dataë§Œí¼ì„ ì œì™¸í•œ ë’·ë¶€ë¶„ì„ ì•žìª½ìœ¼ë¡œ ë‹¹ê²¨ì˜´
 			str[i] = str[i + data];
 
-		for (int i = 0;i < data;i++)//strÀÇ µÞºÎºÐ data¸¸Å­À» TempStrÀÇ ³»¿ëÀ¸·Î Ã¤¿ò
+		for (int i = 0; i < data; i++)//strì˜ ë’·ë¶€ë¶„ dataë§Œí¼ì„ TempStrì˜ ë‚´ìš©ìœ¼ë¡œ ì±„ì›€
 			str[n - data + i] = TempStr[i];
 	}
 	else if (d < 0)//CounterClockwise Rotation
 	{
-		for (int i = 0;i < data;i++)//strÀÇ µÞºÎºÐ data¸¸Å­À» TempStr¿¡ ÀúÀå
+		for (int i = 0; i < data; i++)//strì˜ ë’·ë¶€ë¶„ dataë§Œí¼ì„ TempStrì— ì €ìž¥
 			TempStr[i] = str[n - data + i];
 
-		for (int i = 0;i < n - data;i++)//strÀÇ µÞºÎºÐ data¸¸Å­À» Á¦¿ÜÇÑ ¾ÕºÎºÐÀ» µÞÂÊÀ¸·Î ´ç°Ü¿È
+		for (int i = 0; i < n - data; i++)//strì˜ ë’·ë¶€ë¶„ dataë§Œí¼ì„ ì œì™¸í•œ ì•žë¶€ë¶„ì„ ë’·ìª½ìœ¼ë¡œ ë‹¹ê²¨ì˜´
 			str[n - i - 1] = str[n - i - 2];
 
-		for (int i = 0;i < data;i++)//strÀÇ µÞºÎºÐ data¸¸Å­À» TempStrÀÇ ³»¿ëÀ¸·Î Ã¤¿ò
+		for (int i = 0; i < data; i++)//strì˜ ë’·ë¶€ë¶„ dataë§Œí¼ì„ TempStrì˜ ë‚´ìš©ìœ¼ë¡œ ì±„ì›€
 			str[i] = TempStr[i];
 	}
 
