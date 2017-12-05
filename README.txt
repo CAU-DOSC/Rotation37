@@ -44,16 +44,16 @@ Program summary
 Library function List
 
 void trivial (char *str1, int length, int d)
-	// length 만큼의 str1을 받아 |d|만큼의 문자열을 temp에 저장해 주어진 방향으로 rotate
+	// length 만큼의 str1을 받아 맨 앞의 값을 temp에 저장해 앞으로 1씩 이동 한 후 뒤에 temp 저장
 
 void juggle (char *str1, int length, int d)
-	//
+	// length 만큼의 str1을 받아 맨 앞의 값을 temp에 저장해 d 뒤에 있는 값을 d 만큼 앞으로 이동 이것을 d번 반복한다. 
 
 void BlockSwap (char *str, int n, int d)
-	//
+	// length 만큼의 str1을 받아 |d|만큼의 문자열을 temp에 저장해 d만큼 뒤를 당겨와서 맨 뒤에 temp를 저장
 
 void reverse (char *str1, int length, int d)
-	//
+	// length 만큼의 str1을 받아 |d|만큼의 문자열을 reverse 한 후 뒤의 문자열도 따로 reverse 한 뒤 전체를 reverse 한다. 
 
 
 
